@@ -1,5 +1,78 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+            nav.navbar.navbar-fixed-top.navbar-inverse(role='navigation')
+                .container
+                    .navbar-header
+                        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href='index.php') Co-workspace
+                    // Collect the nav links, forms, and other content for toggling
+                    .collapse.navbar-collapse.navbar-ex1-collapse
+                        ul.nav.navbar-nav
+                            li
+                                a(href='#about') Login
+                            li
+                                a(href='#services') Register
+                            li
+                                a(href='#contact') Dashboard
+                    // /.navbar-collapse
+                // /.container
+            .container
+                    .jumbotron.hero-spacer
+                        h1 Share your workspace today!
+                        p
+                            | Introducing the concept of sharing workspaces. Rent out free space in your office and make this happen.
+                        p
+                            a.btn.btn-primary.btn-large Share now!
+                    hr
+                    .row
+                        .col-lg-12
+                            h3 Available workspaces
+                    // /.row
+                    .row.text-center
+                        .col-lg-3.col-md-6.hero-feature
+                            .thumbnail
+                                img(src='http://placehold.it/800x500', alt='')
+                                .caption
+                                    h3 Feature Label
+                                    p This would be a great spot to feature some brand new products!
+                                    p
+                                        a.btn.btn-primary(href='#') Buy Now!
+                                        a.btn.btn-default(href='#') More Info
+                        .col-lg-3.col-md-6.hero-feature
+                            .thumbnail
+                                img(src='http://placehold.it/800x500', alt='')
+                                .caption
+                                    h3 Feature Label
+                                    p This would be a great spot to feature some brand new products!
+                                    p
+                                        a.btn.btn-primary(href='#') Book!
+                                        a.btn.btn-default(href='#') More Info
+                        .col-lg-3.col-md-6.hero-feature
+                            .thumbnail
+                                img(src='http://placehold.it/800x500', alt='')
+                                .caption
+                                    h3 Feature Label
+                                    p This would be a great spot to feature some brand new products!
+                                    p
+                                        a.btn.btn-primary(href='#') Book!
+                                        a.btn.btn-default(href='#') More Info
+                        .col-lg-3.col-md-6.hero-feature
+                            .thumbnail
+                                img(src='http://placehold.it/800x500', alt='')
+                                .caption
+                                    h3 Feature Label
+                                    p This would be a great spot to feature some brand new products!
+                                    p
+                                        a.btn.btn-primary(href='#') Book!
+                                        a.btn.btn-default(href='#') More Info
+                    // /.row
+                    hr
+                    footer
+                        .row
+                            .col-lg-12
+                                p Copyright © Company 2013
